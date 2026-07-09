@@ -66,6 +66,28 @@ if(thumbnail) {
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 {socialImage && <meta property="twitter:image" content={socialImage} />}
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": data.sitename,
+  "description": description,
+  "url": Astro.site?.toString(),
+  "logo": new URL("/logo.svg", Astro.site).toString(),
+  "sameAs": [],
+  "areaServed": "Worldwide",
+  "priceRange": "$$$$",
+  "knowsAbout": [
+    "Luxury Real Estate",
+    "Property Listings",
+    "Homes for Sale",
+    "Luxury Villas",
+    "Modern Apartments",
+    "Commercial Properties",
+    "Investment Properties"
+  ]
+})} />
 <script is:inline>
   const setDarkMode = () => {
     if (localStorage.getItem("color-scheme") === "dark") {

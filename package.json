@@ -1,16 +1,16 @@
 {
-  "name": "starfunnel",
+  "name": "boldroutes",
   "type": "module",
   "license": "CC BY-ND 4.0",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "keywords": [
     "astro",
-    "Static CMS",
-    "Vue 3",
-    "mdx",
-    "markdown"
+    "real-estate",
+    "luxury",
+    "property",
+    "tailwind"
   ],
-  "description": "Fast & Green Sales Funnel Theme Based on Astro + Static CMS. ",
+  "description": "BoldRoutes — Premium Luxury Real Estate Agency website built with Astro, Vue 3, and Tailwind CSS.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
