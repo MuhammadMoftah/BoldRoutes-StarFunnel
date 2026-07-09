@@ -34,8 +34,8 @@ MAILCHIMP_LIST_ID=XXX
 SLACK_CHANNEL_ID=XXX
 SLACK_TOKEN=XXX
 
-FROM_EMAIL_ADDRESS=hello@boldroutes.com
-TO_EMAIL_ADDRESS=hello@boldroutes.com
+FROM_EMAIL_ADDRESS=your-email@example.com
+TO_EMAIL_ADDRESS=your-email@example.com
 
 MAILGUN_API_KEY=XXX
 MAILGUN_DOMAIN=your-domain.com

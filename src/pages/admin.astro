@@ -1,7 +1,7 @@
 ---
 /* STATIC CMS ADMIN PAGE */
 import { page, settings, post } from "@cms/index.mjs";
-import logo from "@icons/logo.svg";
+import logo from "@assets/BoldRoutes-logo.svg";
 import newsIcon from "@icons/news.svg";
 import pageIcon from "@icons/page.svg";
 import menuIcon from "@icons/menu.svg";
@@ -16,7 +16,7 @@ const url = Astro.site;
 const config = {
   locale: lang,
   site_url: url,
-  logo_url: "/logo.svg",
+  logo_url: logo.src,
   local_backend: true,
   backend: {
     name: "test-repo",

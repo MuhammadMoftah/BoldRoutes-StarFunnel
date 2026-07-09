@@ -2,6 +2,7 @@
 import NavMobile from "@components/navigation/NavMobile.vue";
 import { Icon } from "astro-icon/components";
 import ColorSwitch from "@components/common/ColorSwitch.vue";
+import mainLogo from "@assets/BoldRoutes-logo.svg?url";
 
 import { t } from "@util/translate";
 
@@ -25,7 +26,7 @@ const isActive = (href) => {
       href="/"
       aria-label={title}
       class="flex h-full items-center justify-start"
-      ><Icon name="logo" class="h-6" /></a
+      ><img src={mainLogo} alt="BoldRoutes" class="h-10 w-auto" /></a
     >
     {
       menu && (
@@ -75,7 +76,7 @@ const isActive = (href) => {
         >
           <Icon name="menu-solid" class="h-10 w-10" slot="menu" />
           <Icon name="close" class="h-10 w-10" slot="close" />
-          <Icon name="logo" class="w-full" slot="logo" />
+          <img src={mainLogo} alt="BoldRoutes" class="w-full max-w-[12rem]" slot="logo" />
 
           <div
             class="relatives flex w-full flex-wrap justify-center gap-2 py-4"

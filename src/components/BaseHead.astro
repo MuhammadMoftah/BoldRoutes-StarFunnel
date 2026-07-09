@@ -2,10 +2,12 @@
 import { getEntry } from "astro:content";
 import { ViewTransitions } from "astro:transitions";
 import { getImage } from "astro:assets";
+import mainLogo from "@assets/BoldRoutes-logo.svg?url";
 
 import "../styles/global.css";
 
 const { data } = await getEntry("config", "about");
+const contact = await getEntry("config", "contact");
 
 interface Props {
   title: string;
@@ -74,8 +76,8 @@ if(thumbnail) {
   "name": data.sitename,
   "description": description,
   "url": Astro.site?.toString(),
-  "logo": new URL("/logo.svg", Astro.site).toString(),
-  "sameAs": [],
+  "logo": new URL(mainLogo, Astro.site).toString(),
+  "sameAs": contact.data.social?.map((link) => link.href) ?? [],
   "areaServed": "Worldwide",
   "priceRange": "$$$$",
   "knowsAbout": [
