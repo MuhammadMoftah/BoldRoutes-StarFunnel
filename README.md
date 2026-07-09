@@ -24,7 +24,7 @@ Rename `env.txt` to `.env` and configure your settings:
 BLOG_SLUG=news
 WEBSITE_LANGUAGE=en
 CURRENCY=USD
-NODE_VERSION=18
+NODE_VERSION=20
 NEWSLETTER_PROVIDER=mailchimp
 
 MAILCHIMP_API_KEY=XXX
